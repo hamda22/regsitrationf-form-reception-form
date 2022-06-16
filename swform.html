@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+  </head>
+  <body>
+    <!-- step 1 -->
+    <form class="flex justify-center flex-wrap h-full flex-col">
+      <div class="border m-8 p-4">
+        <p>step 1</p>
+        <label for="name">Name of Social Worker</label><br />
+        <input type="text" class="border" /><br />
+        <p>social worker course</p>
+        <div>
+          <input type="radio" name="sw" id="" class="" />
+          <label for="" class="">yes</label>
+        </div>
+        <div>
+          <input type="radio" name="sw" id="" />
+          <label for="no">no</label><br />
+        </div>
+        <div>
+          <p>if yes,which level you completed:</p>
+          <div>
+            <input type="radio" name="level" id="" />
+            <label for="Degree">Degree</label>
+          </div>
+          <div>
+            <input type="radio" name="level" id="" />
+            <label for="Diploma">Diploma</label>
+          </div>
+          <div>
+            <input type="radio" name="level" id="" />
+            <label for="Certificate">Certificate</label>
+          </div>
+        </div>
+        <p>if no ,course undertaking</p>
+        <div>
+          <input type="radio" name="course" id="" />
+          <label for="Degree">Degree</label>
+        </div>
+        <div>
+          <input type="radio" name="course" id="" />
+          <label for="Diploma">Diploma</label>
+        </div>
+        <div>
+          <input type="radio" name="course" id="" />
+          <label for="Certificate">Certificate</label>
+        </div>
+        <p>year of completion:</p>
+        <input type="number" name="year" id="" class="border" min="1" /><br />
+        <label for="university">university:</label><br />
+        <select name="university" id="" class="border">
+          <option value="Hargiesa University"></option>
+          <option value="Golis University">Golis University</option>
+          <option value="New Generation University">
+            New Generation University
+          </option>
+          <option value="Admas University ">Admas University</option>
+          <option value="Amoud University ">Amoud University</option>
+          <option value="Burao University">Burao University</option>
+        </select>
+        <br />
+        <button type="button" class="border mt-4">next</button>
+      </div>
+      <!-- step 2  -->
+      <div class="border m-8 p-4">
+        <p class="text-center">step 2</p>
+        <p>UICEF/MESFA SPONSERED:</p>
+        <div>
+          <input type="radio" name="SPONSERED" id="" class="" />
+          <label for="" class="">yes</label>
+        </div>
+        <div>
+          <input type="radio" name="SPONSERED" id="" />
+          <label for="no">no</label><br />
+        </div>
+        <p>Expected year of completion</p>
+        <input type="date" name="date" id="" class="border" />
+        <p>are you working</p>
+        <div>
+          <input type="radio" name="work" id="" /> <label for="work">yes</label>
+        </div>
+        <div>
+          <input type="radio" name="work" id="" /> <label for="work">no</label>
+        </div>
+        <p>if yes,</p>
+        <div>
+          <input type="radio" name="work" /> <label for="work">Employed</label>
+        </div>
+        <div>
+          <input type="radio" name="work" />
+          <label for="work">Intership </label>
+        </div>
+        <div>
+          <input type="radio" name="work" />
+          <label for="work">Volunteer</label>
+        </div>
+        <p>self-employed:</p>
+        <div>
+          <input type="radio" name="SE" id="" class="" />
+          <label for="" class="">yes</label>
+        </div>
+        <div>
+          <input type="radio" name="SE" id="" />
+          <label for="no">no</label><br />
+        </div>
+        <p>if yes,Name of the Insitution</p>
+        <input type="text" class="border" />
+
+        <br />
+        <div class="flex place-content-between mt-4">
+          <button type="button" class="border">Next</button>
+          <button type="button" class="border">previous</button>
+        </div>
+      </div>
+      <!-- step 3 -->
+      <div class="border m-8 p-4">
+        <p class="text-end">step 3</p>
+        <p>Business Category you working in</p>
+        <select name="busniess category" id="" class="border">
+          <option value="goverment">Goverment</option>
+          <option value="ngo">NGO</option>
+          <option value="ingo">INGO</option>
+          <option value="UN">UN</option>
+          <option value="Business">Business</option>
+        </select>
+        <p>Sector of work:</p>
+        <div>
+          <input type="radio" name="sector" />
+          <label for="sector">Health</label>
+        </div>
+        <div>
+          <input type="radio" name="sector" />
+          <label for="sector">Education</label>
+        </div>
+        <div>
+          <input type="radio" name="sector" />
+          <label for="sector">Justice</label>
+        </div>
+        <div>
+          <input type="radio" name="sector" />
+          <label for="sector">Child protection/GBV</label>
+        </div>
+        <div>
+          <input type="radio" name="sector" />
+          <label for="sector">Business</label>
+        </div>
+        <p>How Long you have been working</p>
+        <div>
+          <input type="radio" name="working" id="" />
+          <label for="work">1 year</label>
+        </div>
+        <div>
+          <input type="radio" name="working" id="" />
+          <label for="work">2-3</label>
+        </div>
+        <div>
+          <input type="radio" name="working" id="" />
+          <label for="work">4-6</label>
+        </div>
+        <div>
+          <input type="radio" name="working" id="" />
+          <label for="work">7-8</label>
+        </div>
+        <p>Where are you living</p>
+        <div>
+          <input type="radio" name="living" id="" />
+          <label for="living">Hargeisa</label>
+        </div>
+        <div>
+          <input type="radio" name="living" id="" />
+          <label for="living">Burao</label>
+        </div>
+        <div>
+          <input type="radio" name="living" id="" />
+          <label for="living">Borama</label>
+        </div>
+        <div>
+          <input type="radio" name="living" id="" />
+          <label for="living">Berbera</label>
+        </div>
+        <div>
+          <input type="radio" name="living" id="" />
+          <label for="living">Erigavo</label>
+        </div>
+        <div class="mb-4">
+          <label for="phoneNumber">phoneNumber:</label>
+          <input type="number" name="phoneNumber" id="" class="border" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="" class="border" />
+          <div class="flex place-content-between mt-4">
+            <button type="button" class="border">Next</button>
+            <button type="submit" class="border">submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
