@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <title>Reception Management System Form</title>
+  </head>
+  <body class="">
+    <!--image svg  -->
+    <div class="md:m-8 flex place-content-between">
+      <div class="hidden md:block">
+        <img src="rmsf.svg" alt="img" />
+      </div>
+
+      <!-- form -->
+      <!-- this div for h1  -->
+      <div class="mt-4">
+        <h1 class="pl-11 mb-5">Reception Management System Form</h1>
+        <div
+          class="border w-screen rounded-lg m-1 h-screen bg-slate-50 md:w-fit h-fit"
+        >
+          <form action="" class="p-2 mt-4 md:w-96 h-fit">
+            <div class="flex flex-col mb-4">
+              <label for="">Fullname:</label>
+              <input
+                class="w-full input"
+                type="text"
+                name=""
+                id=""
+                class="border"
+                placeholder="eg:Jane Doe"
+              />
+            </div>
+            <div>
+              <label for="">Date:</label>
+              <input type="date" name="" id="" class="input" />
+            </div>
+            <div>
+              <label for="">Time:</label>
+              <input type="time" name="s" id="" class="input" />
+            </div>
+            <div class="mb-4">
+              <label for="">Gender:</label>
+              <div>
+                <input type="radio" name="gender" id="" />
+                <label for="">Female</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" id="" />
+                <label for="">Male</label>
+              </div>
+            </div>
+
+            <div>
+              <label for="">Organization Name:</label>
+              <input type="text" name="" id="" class="input" />
+            </div>
+            <div>
+              <label for="">Contact:</label>
+              <input
+                type="text"
+                name="contact"
+                id=""
+                class="input"
+                placeholder=""
+              />
+            </div>
+            <label for="">Any Office</label>
+            <select name="" id="" class="input">
+              <option>Social affairs Department</option>
+              <option>Gender & Famliy Department</option>
+              <option>Employment Department</option>
+              <option>Labour Department</option>
+              <option>Disablity Department</option>
+              <option>Research Department</option>
+              <option>IT&PR Department</option>
+              <option>Admin&Finance Department</option>
+              <option>HR Department</option>
+              <option>Planning Department</option>
+            </select>
+            <button
+              type="submit"
+              class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            >
+              submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

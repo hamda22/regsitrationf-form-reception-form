@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <link rel="stylesheet" href="./tailwind.css" />
+    <script src="swform.js" defer></script>
   </head>
   <body>
     <!-- step 1 -->
-    <form class="flex justify-center flex-wrap h-full flex-col">
-      <div class="border m-8 p-4">
+    <form class="flex justify-center flex-wrap h-full flex-col" data-multi-step>
+      <div class="border m-8 p-4 hidden" data-step>
         <p>step 1</p>
         <label for="name">Name of Social Worker</label><br />
         <input type="text" class="border" /><br />
@@ -65,10 +67,10 @@
           <option value="Burao University">Burao University</option>
         </select>
         <br />
-        <button type="button" class="border mt-4">next</button>
+        <button type="button" class="border mt-4" data-next>next</button>
       </div>
       <!-- step 2  -->
-      <div class="border m-8 p-4">
+      <div class="border m-8 p-4 hidden"  data-step>
         <p class="text-center">step 2</p>
         <p>UICEF/MESFA SPONSERED:</p>
         <div>
@@ -114,12 +116,12 @@
 
         <br />
         <div class="flex place-content-between mt-4">
-          <button type="button" class="border">Next</button>
-          <button type="button" class="border">previous</button>
+          <button type="button" class="border" data-next>Next</button>
+          <button type="button" class="border" data-previous>previous</button>
         </div>
       </div>
       <!-- step 3 -->
-      <div class="border m-8 p-4">
+      <div class="border m-8 p-4 hidden " data-step>
         <p class="text-end">step 3</p>
         <p>Business Category you working in</p>
         <select name="busniess category" id="" class="border">
@@ -196,7 +198,7 @@
           <label for="email">Email:</label>
           <input type="email" name="email" id="" class="border" />
           <div class="flex place-content-between mt-4">
-            <button type="button" class="border">Next</button>
+            <button type="button" class="border" data-previous>previous</button>
             <button type="submit" class="border">submit</button>
           </div>
         </div>
