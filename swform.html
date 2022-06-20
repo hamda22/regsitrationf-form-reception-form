@@ -12,10 +12,11 @@
   <body>
     <!-- step 1 -->
     <form class="flex justify-center flex-wrap h-full flex-col" data-multi-step>
-      <div class="border m-8 p-4 hidden" data-step>
+      <h1 class=" mt-8 text-center">Social worker Form</h1>
+      <div class="border m-8 p-4 hidden bg-slate-50 rounded-lg" data-step>
         <p>step 1</p>
         <label for="name">Name of Social Worker</label><br />
-        <input type="text" class="border" /><br />
+        <input type="text" class="border input" /><br />
         <p>social worker course</p>
         <div>
           <input type="radio" name="sw" id="" class="" />
@@ -54,9 +55,15 @@
           <label for="Certificate">Certificate</label>
         </div>
         <p>year of completion:</p>
-        <input type="number" name="year" id="" class="border" min="1" /><br />
+        <input
+          type="number"
+          name="year"
+          id=""
+          class="border input"
+          min="1"
+        /><br />
         <label for="university">university:</label><br />
-        <select name="university" id="" class="border">
+        <select name="university" id="" class="border input">
           <option value="Hargiesa University"></option>
           <option value="Golis University">Golis University</option>
           <option value="New Generation University">
@@ -67,10 +74,10 @@
           <option value="Burao University">Burao University</option>
         </select>
         <br />
-        <button type="button" class="border mt-4" data-next>next</button>
+        <button type="button" class="border mt-4 button" data-next>Next</button>
       </div>
       <!-- step 2  -->
-      <div class="border m-8 p-4 hidden"  data-step>
+      <div class="border m-8 p-4 bg-slate-50 rounded-lg hidden" data-step>
         <p class="text-center">step 2</p>
         <p>UICEF/MESFA SPONSERED:</p>
         <div>
@@ -82,7 +89,7 @@
           <label for="no">no</label><br />
         </div>
         <p>Expected year of completion</p>
-        <input type="date" name="date" id="" class="border" />
+        <input type="date" name="date" id="" class="border input" />
         <p>are you working</p>
         <div>
           <input type="radio" name="work" id="" /> <label for="work">yes</label>
@@ -112,19 +119,21 @@
           <label for="no">no</label><br />
         </div>
         <p>if yes,Name of the Insitution</p>
-        <input type="text" class="border" />
+        <input type="text" class="border input" />
 
         <br />
         <div class="flex place-content-between mt-4">
-          <button type="button" class="border" data-next>Next</button>
-          <button type="button" class="border" data-previous>previous</button>
+          <button type="button" class="border button" data-next>Next</button>
+          <button type="button" class="border button" data-previous>
+            previous
+          </button>
         </div>
       </div>
       <!-- step 3 -->
-      <div class="border m-8 p-4 hidden " data-step>
+      <div class="border m-8 p-4 bg-slate-50 rounded-lg hidden" data-step>
         <p class="text-end">step 3</p>
         <p>Business Category you working in</p>
-        <select name="busniess category" id="" class="border">
+        <select name="busniess category" id="" class="border input">
           <option value="goverment">Goverment</option>
           <option value="ngo">NGO</option>
           <option value="ingo">INGO</option>
@@ -192,15 +201,17 @@
         </div>
         <div class="mb-4">
           <label for="phoneNumber">phoneNumber:</label>
-          <input type="number" name="phoneNumber" id="" class="border" />
+          <input type="text" name="phoneNumber" id="" class="border input" />
         </div>
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" id="" class="border" />
-          <div class="flex place-content-between mt-4">
-            <button type="button" class="border" data-previous>previous</button>
-            <button type="submit" class="border">submit</button>
-          </div>
+          <input type="email" name="email" id="" class="border input" />
+        </div>
+        <div class="flex place-content-between mt-4">
+          <button type="button" class="border button" data-previous>
+            previous
+          </button>
+          <button type="submit" class="border button">submit</button>
         </div>
       </div>
     </form>
